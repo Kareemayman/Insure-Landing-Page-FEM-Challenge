@@ -10,6 +10,19 @@
   font-style: italic;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+}
+
 .karla {
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
@@ -95,6 +108,78 @@ header nav a:last-of-type:hover {
     background-color: var(--very-dark-violet);
     color: var(--very-light-gray)
 }
+
+.intro {
+    background-color: var(--dark-violet);
+    color: var(--very-light-gray);
+    position: relative;
+}
+
+.intro .left-pattern {
+    position: absolute;
+    top: 70%;
+    left: 0;
+}
+
+.intro .right-pattern {
+    position: absolute;
+    right: 0;
+    top: 0%;
+
+}
+
+.intro .container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.intro .container .info {
+    flex-basis: 48%;
+}
+
+.intro .container .info span {
+    display: block;
+    background-color: var(--very-light-gray);
+    width: 25%;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.intro .container .info h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    width: 450px;
+    line-height: 0.9;
+}
+
+.intro .container .info p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.intro .container .info a {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    transition: var(--main-trans);
+}
+
+.intro .container .info a:hover {
+    background-color: var(--very-light-gray);
+    color: var(--very-dark-violet);
+}
+
+.intro .container .intro-img {
+    position: absolute;
+    top: 100px;
+    left: calc(50% + 30px)
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
