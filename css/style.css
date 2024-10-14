@@ -98,9 +98,19 @@ header nav a:last-of-type:hover {
 /* End Local Rules */
 
 /* Start Media Queries */
+@media (width <= 769px) {
+    .desktop {
+        display: none;
+    }
+}
+
 @media (min-width: 769px) {
     .container {
         width: 750px;
+    }
+
+    .mobile {
+        display: none;
     }
 }
 
