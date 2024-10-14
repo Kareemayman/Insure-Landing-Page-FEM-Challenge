@@ -54,7 +54,47 @@ a {
     padding-right: 15px;
 }
 
+div > img {
+    max-width: 100%;
+}
+
 /* Start Local Rules */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header nav a {
+    color: rgb(150, 150, 150);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: var(--main-trans);
+}
+
+header nav a:hover {
+    color: var(--very-dark-violet);
+}
+
+header nav a:last-of-type {
+    color: var(--very-dark-violet);
+    border: 2px solid var(--very-dark-violet);
+    padding: 10px 30px;
+}
+
+header nav a:last-of-type:hover {
+    background-color: var(--very-dark-violet);
+    color: var(--very-light-gray)
+}
 /* End Local Rules */
 
 /* Start Media Queries */
