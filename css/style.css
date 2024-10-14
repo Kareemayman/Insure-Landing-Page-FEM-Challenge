@@ -125,7 +125,6 @@ header nav a:last-of-type:hover {
     position: absolute;
     right: 0;
     top: 0%;
-
 }
 
 .intro .container {
@@ -138,6 +137,7 @@ header nav a:last-of-type:hover {
 
 .intro .container .info {
     flex-basis: 48%;
+    position: relative;
 }
 
 .intro .container .info span {
@@ -153,11 +153,15 @@ header nav a:last-of-type:hover {
     margin-bottom: 30px;
     width: 450px;
     line-height: 0.9;
+    position: relative;
+    z-index: 900;
 }
 
 .intro .container .info p {
     line-height: 1.8;
     margin-bottom: 30px;
+    position: relative;
+    z-index: 900;
 }
 
 
@@ -167,6 +171,10 @@ header nav a:last-of-type:hover {
     letter-spacing: 1px;
     padding: 10px 30px;
     transition: var(--main-trans);
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    z-index: 900;
 }
 
 .intro .container .info a:hover {
@@ -180,13 +188,70 @@ header nav a:last-of-type:hover {
     left: calc(50% + 30px)
 }
 
+.intro .container .info .mobile-left-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro .container .info .mobile-right-pattern {
+    position: absolute;
+    top: 80%;
+    right: 0;
+}
+
+.intro .container .mobile-intro-img {
+    width: 100%;
+}
+
+.intro .container .mobile-intro-img img {
+    width: 100%;
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
+@media (width <= 1000px) {
+    .intro .container .intro-img {
+        display: none;
+    }
+
+    .intro .container .info {
+        flex-basis: 100%;
+    }
+}
+
 @media (width <= 769px) {
     .desktop {
         display: none;
     }
+
+    .intro .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 0;
+    }
+
+    .intro .container .info {
+        flex-basis: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .intro .container .info span {
+        display: none;
+    }
+
+    .intro .container .info h1{
+        margin-top: 100px;
+        width: fit-content;
+        font-size: 3rem;
+    }
+
 }
 
 @media (min-width: 769px) {
