@@ -389,6 +389,59 @@ footer .container .flex:last-of-type a {
 footer .container .flex:last-of-type a:hover {
     text-decoration: underline;
 }
+
+header {
+    position: relative;
+}
+
+header .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 76.4px);
+    background-color: var(--very-dark-violet);
+    z-index: 10000;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    transition: var(--main-trans);
+}
+
+header .mobile-menu a {
+    display: block;
+    color:hsl(0, 0%, 98%);
+    padding-bottom: 30px;
+}
+
+header .mobile-menu a:last-of-type {
+    border: 2px solid hsl(0, 0%, 98%);
+    padding: 15px;
+}
+
+header .mobile-menu div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.invisible {
+    top: -100vh !important;
+}
+
+.toggle-scroll {
+    overflow: hidden;
+}
+
+.rotate {
+    rotate: 360deg;
+}
+
+.burger-icon {
+    transition: 0.6s;
+    transition-delay: 0.1s;
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
