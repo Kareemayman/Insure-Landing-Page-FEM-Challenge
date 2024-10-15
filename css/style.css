@@ -307,6 +307,88 @@ header nav a:last-of-type:hover {
     background-color: var(--very-light-gray);
     color: var(--very-dark-violet);
 }
+
+footer {
+    position: relative;
+    background-color: var(--very-light-gray);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer .container {
+    position: relative;
+    z-index: 1000;
+}
+
+footer .container .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 30px;
+    border-bottom: 1px solid var(--dark-grayish-violet);
+}
+
+footer .container .flex .social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+footer .container .flex .social div {
+    cursor: pointer;
+    position: relative;
+}
+
+
+footer .container .flex .social div::after {
+    transition: var(--main-trans);
+    width: 0;
+    height: 2px;
+    position: absolute;
+    content: "";
+    background-color: var(--dark-grayish-violet);
+    bottom: -5px;
+    left: 50%;
+    translate: -50%;
+}
+
+footer .container .flex .social div:hover::after {
+    width: 80%;
+}
+
+footer .container .flex:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    align-items: flex-start;
+}
+
+footer .container .flex:last-of-type p {
+    padding: 30px 0;
+    color: var(--dark-grayish-violet);
+    font-weight: 600;
+}
+
+footer .container .flex:last-of-type a {
+    display: block;
+    color: var(--very-dark-violet);
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    transition: var(--main-trans);
+}
+
+footer .container .flex:last-of-type a:hover {
+    text-decoration: underline;
+}
 /* End Local Rules */
 
 /* Start Media Queries */
@@ -385,6 +467,23 @@ header nav a:last-of-type:hover {
         font-size: 2.3rem;
         width: fit-content;
         margin-bottom: 30px;
+    }
+
+    footer .container .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .container .flex:first-of-type {
+        gap: 30px;
+    }
+
+    footer .container .flex:last-of-type {
+        align-items: center;
+    }
+
+    footer .container .flex:last-of-type a {
+        padding-bottom: 15px;
     }
 
 }
