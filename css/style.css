@@ -208,6 +208,45 @@ header nav a:last-of-type:hover {
     width: 100%;
 }
 
+.how .container {
+    margin-top: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.how .container span {
+    display: block;
+    background-color: purple;
+    width: 12%;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.how .container h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    line-height: 0.9;
+    color: var(--very-dark-violet)
+}
+
+.how .container .flex {
+    display: flex;
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.how .container .flex h3 {
+    padding: 30px 0 20px;
+    font-size: 1.8rem;
+    color: var(--very-dark-violet)
+
+}
+
+.how .container .flex p {
+    line-height: 1.8;
+    color: var(--dark-grayish-violet);
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
@@ -249,6 +288,25 @@ header nav a:last-of-type:hover {
     .intro .container .info h1{
         margin-top: 100px;
         width: fit-content;
+        font-size: 3rem;
+    }
+
+    .how .container {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .how .container .flex {
+        flex-direction: column;
+    }
+
+    .how .container span {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .how .container h1 {
         font-size: 3rem;
     }
 
