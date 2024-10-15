@@ -247,6 +247,50 @@ header nav a:last-of-type:hover {
     color: var(--dark-grayish-violet);
 }
 
+.find-out-more {
+    padding-bottom: 120px;
+}
+
+.find-out-more .container {
+    background-color: var(--dark-violet);
+    padding: 50px 90px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.find-out-more .container .pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.find-out-more .container h1 {
+    font-size: 3.6rem;
+    margin: 0;
+    width: 510px;
+    /* line-height: 0.9; */
+    z-index: 900;
+}
+
+.find-out-more .container a {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    transition: var(--main-trans);
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 900;
+}
+
+.find-out-more .container a:hover {
+    background-color: var(--very-light-gray);
+    color: var(--very-dark-violet);
+}
 /* End Local Rules */
 
 /* Start Media Queries */
@@ -308,6 +352,23 @@ header nav a:last-of-type:hover {
 
     .how .container h1 {
         font-size: 3rem;
+    }
+
+    .find-out-more {
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    .find-out-more .container {
+        flex-direction: column;
+        padding: 60px 30px;
+        text-align: center;
+    }
+
+    .find-out-more .container h1 {
+        font-size: 2.3rem;
+        width: fit-content;
+        margin-bottom: 30px;
     }
 
 }
